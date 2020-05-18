@@ -449,3 +449,9 @@ ro.debuggable=1
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=adreno
+
+# GPS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.gps.agps_provider=1 \
+    ro.ril.def.agps.mode=1
+

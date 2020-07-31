@@ -606,4 +606,3 @@ PRODUCT_PACKAGES += \
 # Recorder
 PRODUCT_PACKAGES += \
     OPScreenRecorder
-

@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2018 The LineageOS Project
 #
@@ -491,3 +492,6 @@ PRODUCT_PACKAGES += \
     GalleryGo \
     Retro
 
+# Force triple frame buffers
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3

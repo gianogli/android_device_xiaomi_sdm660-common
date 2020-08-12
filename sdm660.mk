@@ -490,3 +490,6 @@ PRODUCT_PACKAGES += \
     GalleryGo \
     Retro
 
+# XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts

@@ -1,6 +1,6 @@
 /*
    Copyright (c) 2016, The CyanogenMod Project
-   Copyright (c) 2019, The LineageOS Project
+   Copyright (c) 2019-2020, The LineageOS Project
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -39,9 +39,6 @@
 #include <sys/_system_properties.h>
 
 #include "vendor_init.h"
-
-using android::base::GetProperty;
-using android::base::SetProperty;
 
 char const *heapstartsize;
 char const *heapgrowthlimit;
@@ -101,16 +98,27 @@ void check_device()
     }
 }
 
+void property_override(char const prop[], char const value[], bool add = true)
+{
+    auto pi = (prop_info *) __system_property_find(prop);
+
+    if (pi != nullptr) {
+        __system_property_update(pi, value, strlen(value));
+    } else if (add) {
+        __system_property_add(prop, strlen(prop), value, strlen(value));
+    }
+}
+
 void vendor_load_properties()
 {
     check_device();
 
-    SetProperty("dalvik.vm.heapstartsize", heapstartsize);
-    SetProperty("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
-    SetProperty("dalvik.vm.heapsize", heapsize);
-    SetProperty("dalvik.vm.heaptargetutilization", heaptargetutilization);
-    SetProperty("dalvik.vm.heapminfree", heapminfree);
-    SetProperty("dalvik.vm.heapmaxfree", heapmaxfree);
+    property_override("dalvik.vm.heapstartsize", heapstartsize);
+    property_override("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
+    property_override("dalvik.vm.heapsize", heapsize);
+    property_override("dalvik.vm.heaptargetutilization", heaptargetutilization);
+    property_override("dalvik.vm.heapminfree", heapminfree);
+    property_override("dalvik.vm.heapmaxfree", heapmaxfree);
     
     // fingerprint
     property_override("ro.build.description", "lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys");

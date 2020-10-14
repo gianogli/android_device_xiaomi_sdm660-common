@@ -502,7 +502,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiParts \
     init.xiaomiparts.rc \
-    init.xiaomiparts.sh
+    init.xiaomiparts.sh \
+    Dirac
 
 # Force triple frame buffers
 PRODUCT_PROPERTY_OVERRIDES += \

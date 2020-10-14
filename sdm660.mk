@@ -498,3 +498,6 @@ PRODUCT_PACKAGES += \
     GalleryGo \
     Retro
 
+# Dirac
+PRODUCT_PACKAGES += \
+    Dirac

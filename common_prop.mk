@@ -171,7 +171,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=0 \
     video.disable.ubwc=1 \
     video.accelerate.hw=1 \
-    debug.hwui.renderer=opengl
+    debug.hwui.renderer=skiavk
 
 # The default sf phase offset is set to 6ms, to avoid it be included into next
 # vsync threshold, set high fps early sf and next vsync threshold phase offset

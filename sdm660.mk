@@ -29,11 +29,17 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Overlays
+
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
+    $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
+
+# RRO configuration
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

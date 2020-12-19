@@ -116,6 +116,9 @@ TARGET_ENABLE_MEDIADRM_64 := true
 # DT2W
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
+# EXFAT
+TARGET_EXFAT_DRIVER := exfat
+
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)

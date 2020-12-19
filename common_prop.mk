@@ -436,3 +436,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.use_fifo_ui=1 \
     pm.dexopt.bg-dexopt=speed-profile \
     pm.dexopt.shared=speed
+
+# USB debugging
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.usb.config=mtp,adb \
+ro.adb.secure=0 \
+ro.secure=0 \
+ro.debuggable=1

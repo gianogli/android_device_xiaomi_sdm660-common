@@ -492,4 +492,6 @@ PRODUCT_PACKAGES += \
 
 # XiaomiParts
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    XiaomiParts \
+    init.xiaomiparts.rc \
+    init.xiaomiparts.sh

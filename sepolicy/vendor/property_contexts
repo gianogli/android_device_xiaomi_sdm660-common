@@ -42,3 +42,7 @@ sys.thermal.                            u:object_r:thermal_engine_prop:s0
 
 # Wlan
 persist.vendor.wigig.npt.enable         u:object_r:vendor_default_prop:s0
+
+#Boosts
+persist.xiaomiparts.gpu_profile                  u:object_r:boosts_prop:s0
+persist.xiaomiparts.cpu_profile                  u:object_r:boosts_prop:s0

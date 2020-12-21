@@ -169,7 +169,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.video.disable.ubwc=1 \
     vendor.display.enable_default_color_mode=0 \
-    video.disable.ubwc=1
+    video.disable.ubwc=1 \
+    video.accelerate.hw=1 \
+    debug.hwui.renderer=opengl
 
 # The default sf phase offset is set to 6ms, to avoid it be included into next
 # vsync threshold, set high fps early sf and next vsync threshold phase offset
@@ -428,7 +430,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Improve global touch screen response
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
-    video.accelerate.hw=1 \
     view.scroll_friction=0
 
 #Open the first-in-first-out interface thread

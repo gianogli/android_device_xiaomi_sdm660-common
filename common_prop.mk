@@ -444,3 +444,8 @@ persist.sys.usb.config=mtp,adb \
 ro.adb.secure=0 \
 ro.secure=0 \
 ro.debuggable=1
+
+# Graphics
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.egl=adreno \
+    ro.hardware.vulkan=adreno

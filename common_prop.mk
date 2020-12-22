@@ -455,3 +455,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.gps.agps_provider=1 \
     ro.ril.def.agps.mode=1
 
+# Gboard
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.ime.kb_pad_port_b=1

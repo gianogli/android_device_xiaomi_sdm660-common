@@ -1,5 +1,10 @@
 # jasmine package version: V11.0.14.0.QDIMIXM, unless stated otherwise
 
+# Dirac - from Xiaomi
+vendor/etc/diracvdd.bin
+vendor/lib/rfsa/adsp/dirac_resource.dar
+vendor/lib/rfsa/adsp/libdirac-capiv2.so
+
 # ADSP - from jasmine
 vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
 vendor/bin/cdsprpcd|c9fc5873c205e1ebb844d18bc10f89dd428a01ee

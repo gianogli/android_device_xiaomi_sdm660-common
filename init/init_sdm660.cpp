@@ -119,8 +119,8 @@ void vendor_load_properties()
     property_override("dalvik.vm.heaptargetutilization", heaptargetutilization);
     property_override("dalvik.vm.heapminfree", heapminfree);
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
-    
+
     // fingerprint
-    property_override("ro.build.description", "lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:11/RQ1A.201205.008/6943376:user/release-keys");
+  property_override("ro.build.description", "lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys");
+  property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/redfin/redfin:11/RQ1A.201205.010/6953398:user/release-keys");
 }

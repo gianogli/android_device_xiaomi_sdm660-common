@@ -291,9 +291,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
     ro.telephony.default_network=9,9 \
     ro.telephony.iwlan_operation_mode=legacy \
-    ro.vendor.use_data_netmgrd=true \
-    ro.vold.umsdirtyratio=20 \
-    ro.ril.disable.power.collapse=0
+    ro.vendor.use_data_netmgrd=true
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
@@ -386,11 +384,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Fast App Launch
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
-
-# Power Saver
-PRODUCT_PROPERTY_OVERRIDES += \
-    power.saving.mode=1 \
-    pm.sleep_mode=1
 
 # ZenTouch V12
 

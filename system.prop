@@ -1,3 +1,8 @@
+#Bluetooth
+persist.bt.enableAptXHD=true
+persist.service.btui.use_aptx=1
+persist.vendor.bt.a2dp_offload_cap=sbc-aac-aptx-aptXHD
+
 # ZenTouch V13
 
 #ngentouch improve
@@ -39,3 +44,58 @@ view.scroll_friction=0
 
 pm.dexopt.bg-dexopt=speed-profile
 pm.dexopt.shared=speed
+.
+
+# SQInjectorX5
+pm.dexopt.install=speed
+vendor.post_boot.parsed=1
+dalvik.vm.heapminfree=2m
+ro.sys.fw.dex2oat_thread_count=8
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.image-dex2oat-threads=8
+persist.sys.perf.debug=false
+persist.sys.scrollingcache=1
+vendor.perf.workloadclassifier.enable=true
+debug.hwui.disable_vsync=true
+enforce_process_limit=4
+persist.sys.NV_FPSLIMIT=70
+persist.sys.NV_POWERMODE=1
+persist.sys.NV_PROFVER=15
+persist.sys.NV_STEREOCTRL=0
+persist.sys.NV_STEREOSEPCHG=0
+persist.sys.NV_STEREOSEP=20
+persist.sys.purgeable_assets=1
+#ro.product.model
+#ro.product.manufacturer
+ro.vendor.touchfeature.gamemode.enable=true
+ro.product.gpu.driver=1
+video.accelerate.hw=1
+debug.sf.hw=1
+debug.egl.swapinterval=-60
+h3d.force=1
+force_hw_ui=true
+ro.FOREGROUND_APP_MEM=1280
+ro.VISIBLE_APP_MEM=2560
+ro.PERCEPTIBLE_APP_MEM=3840
+ro.HEAVY_WEIGHT_APP_MEM=6400
+ro.SECONDARY_SERVER_MEM=7680
+ro.BACKUP_APP_MEM=8960
+ro.HOME_APP_MEM=2048
+ro.HIDDEN_APP_MEM=12800
+ro.CONTENT_PROVIDER_MEM=15360
+ro.EMPTY_APP_MEM=20480
+ro.FOREGROUND_APP_ADJ=0
+ro.VISIBLE_APP_ADJ=1
+ro.PERCEPTIBLE_APP_ADJ=2
+ro.HEAVY_WEIGHT_APP_ADJ=4
+ro.SECONDARY_SERVER_ADJ=5
+ro.BACKUP_APP_ADJ=6
+ro.HOME_APP_ADJ=1
+ro.HIDDEN_APP_MIN_ADJ=7
+ro.EMPTY_APP_ADJ=15
+#SQInjectorX5
+
+#ram
+ro.HOME_APP_ADJ=1
+ro.config.low_ram=true
+ro.vendor.qti.sys.fw.bservice_enable=true

@@ -509,4 +509,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Modulos
 PRODUCT_PACKAGES += \
-    Fastcharger.sh 
+    Fastcharger.sh \
+    SQInjectorX5.sh \
+    sqinjector.auto.sh \
+    sqinjector.sh

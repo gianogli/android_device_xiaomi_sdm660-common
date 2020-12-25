@@ -47,4 +47,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <!-- The default tiles to display in QuickSettings -->
     <string name="quick_settings_tiles_default" translatable="false">wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,cast,hotspot,screenrecord,dark</string>
+ 
+    <!-- Smart Charging -->
+    <bool name="config_supportSmartCharging">true</bool>
 </resources>

@@ -101,6 +101,11 @@ on early-boot
     chmod 0775 /mnt/vendor/persist/data/pfm/licenses
 
 on boot
+
+    # SysInfo
+    chown system system /sys/class/thermal/thermal_zone4/temp
+    chmod 0660 /sys/class/thermal/thermal_zone4/temp
+
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/state

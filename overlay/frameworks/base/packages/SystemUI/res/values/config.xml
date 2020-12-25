@@ -39,6 +39,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <!-- The number of rows in the QuickSettings -->
     <integer name="quick_settings_max_rows">2</integer>
 
+    <!-- The CPU temperature sensor path, defaults to empty -->
+    <string name="config_cpuTempSensor" translatable="false">/sys/class/thermal/thermal_zone4/temp</string>
+    
+    <!-- The CPU temperature divider, if needed -->
+    <integer name="config_cpuTempDivider" translatable="false">100</integer>
+
     <!-- The default tiles to display in QuickSettings -->
     <string name="quick_settings_tiles_default" translatable="false">wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,cast,hotspot,screenrecord,dark</string>
 </resources>

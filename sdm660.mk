@@ -507,3 +507,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
+# Modulos
+PRODUCT_PACKAGES += \
+    Fastcharger.sh 

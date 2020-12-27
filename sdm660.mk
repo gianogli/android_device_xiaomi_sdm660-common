@@ -493,7 +493,8 @@ $(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
 PRODUCT_PACKAGES += \
     GCamGo \
     GalleryGo \
-    Retro
+    Retro \
+    Gboard
 
 # Force triple frame buffers
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -95,6 +95,11 @@ on boot
     chown system system /persist/speccfg/submask
     chown system system /persist/speccfg/partition
 
+#DT2W
+    chown system system /proc/tp_gesture
+    chmod 0660 /proc/tp_gesture
+    write /proc/tp_gesture 1
+
 #Create folder dump yuv images while debugging
     mkdir /data/vendor/camera 0770 camera camera
 

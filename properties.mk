@@ -146,9 +146,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
     debug.stagefright.omx_default_rank=0 \
     media.stagefright.thumbnail.prefer_hw_codecs=true \
-    vendor.vidc.dec.enable.downscalar=1 \
+    media.stagefright.enable-player=true \
+    media.stagefright.enable-http=true \
+    media.stagefright.enable-aac=true \
+    media.stagefright.enable-qcp=true \
+    media.stagefright.enable-scan=true \
+    media.aac_51_output_enabled=true \
+    mmp.enable.3g2=true \
+    mm.enable.smoothstreaming=true \
+    persist.mm.enable.prefetch=true \
+    vidc.enc.target_support_bframe=1 \
+    vidc.enc.dcvs.extra-buff-count=2 \
+    vendor.mm.enable.qcom_parser=13631487 \
     vendor.vidc.enc.disable_bframes=1 \
-    vendor.vidc.enc.disable.pq=true
+    vendor.vidc.dec.enable.downscalar=1 \
+    vendor.vidc.enc.disable.pq=true \
+    vendor.video.disable.ubwc=1
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Netflix
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \

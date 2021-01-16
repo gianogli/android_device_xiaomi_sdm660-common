@@ -148,7 +148,6 @@ public class DeviceSettings extends PreferenceFragment implements
     private SwitchPreference mSelinuxMode;
     private SwitchPreference mSelinuxPersistence;
     private Preference mClearSpeakerPref;
-    private Preference mAmbientPref;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {

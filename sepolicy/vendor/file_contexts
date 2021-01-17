@@ -36,6 +36,7 @@
 
 # FPS Info
 /sys/devices/virtual/graphics/fb0/measured_fps           u:object_r:sysfs_fps:s0
+/sys/class/graphics/fb0/measured_fps                         u:object_r:sysfs_fpsinfo:s0
 
 # Kcal
 /sys/devices/platform/kcal_ctrl.0(/.*)?         u:object_r:kcal_dev:s0
@@ -65,3 +66,11 @@
 /sys/module/msm_thermal/core_control/enabled		u:object_r:sysfs_corecontrol:s0
 /sys/module/msm_thermal/parameters/enabled		u:object_r:sysfs_msmthermal:s0
 /sys/module/msm_thermal/vdd_restriction/enabled		u:object_r:sysfs_vddrestrict:s0
+
+# Vibration
+/sys/class/leds/vibrator/vmax_override               u:object_r:sysfs_vibrator:s0
+/sys/class/leds/vibrator/vmax_mv_user                u:object_r:sysfs_vibrator:s0
+/sys/class/leds/vibrator/vmax_mv_call                u:object_r:sysfs_vibrator:s0
+/sys/class/leds/vibrator/vmax_mv_strong              u:object_r:sysfs_vibrator:s0
+/sys/class/timed_output/vibrator/vmax_mv             u:object_r:sysfs_vibrator:s0
+/sys/class/timed_output/vibrator/vtg_level           u:object_r:sysfs_vibrator:s0

@@ -1,4 +1,3 @@
-
 #
 # Copyright (C) 2018 The LineageOS Project
 #
@@ -208,10 +207,6 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
     vendor.display.config@1.1 \
     vendor.display.config@1.1_vendor
-
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \

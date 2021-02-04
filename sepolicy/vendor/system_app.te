@@ -22,6 +22,3 @@ set_prop(system_app, system_prop);
 
 # allow system apps to read battery status
 r_dir_file(system_app, sysfs_battery_supply)
-
-# Smart Charging
-allow system_app sysfs_scharge:file { getattr open write };

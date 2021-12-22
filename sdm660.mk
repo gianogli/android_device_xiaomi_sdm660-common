@@ -81,6 +81,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libhdmiedid \
     libhfp \
+    libssrec \
+    liba2dpoffload \
+    libspkrprot \
     libsndmonitor
 
 PRODUCT_COPY_FILES += \

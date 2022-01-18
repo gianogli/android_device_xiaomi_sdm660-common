@@ -15,6 +15,7 @@
  */
 package org.lineageos.settings.thermal;
 
+import android.app.ActionBar;
 import android.annotation.Nullable;
 import android.content.Context;
 import android.content.Intent;
@@ -67,6 +68,10 @@ public class ThermalSettingsFragment extends PreferenceFragment
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
+        final ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         super.onCreate(savedInstanceState);
 
         mApplicationsState = ApplicationsState.getInstance(getActivity().getApplication());

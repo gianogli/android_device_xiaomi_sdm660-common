@@ -341,6 +341,10 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Perf
+PRODUCT_PACKAGES += \
+    libqti-perfd-client
+
 # Parts
 PRODUCT_PACKAGES += \
     XiaomiParts

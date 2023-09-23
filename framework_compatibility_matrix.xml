@@ -1,4 +1,4 @@
-<compatibility-matrix version="3.0" type="framework">
+<compatibility-matrix version="3.0" type="framework" target-level="3">
     <hal format="hidl" optional="true">
         <name>android.hardware.audio.effect</name>
         <version>5.0</version>

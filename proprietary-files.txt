@@ -1017,6 +1017,7 @@ vendor/lib64/com.qualcomm.qti.uceservice@2.0.so;MODULE_SUFFIX=_vendor|7f403e9e09
 vendor/lib64/com.qualcomm.qti.uceservice@2.1.so;MODULE_SUFFIX=_vendor|0f8bb51983c7fa165aa1dcf51416cb479bb7a5f2
 vendor/lib64/com.qualcomm.qti.uceservice@2.2.so;MODULE_SUFFIX=_vendor|bc190de9a89e6fec65de5aec1e02e91de9164e02
 vendor/lib64/com.qualcomm.qti.uceservice@2.3.so;MODULE_SUFFIX=_vendor|5ecdd9d050038fe666809c16bf938143bc1326c6
+vendor/lib64/deviceInfoServiceModule.so|c7d4021528f3a43320d0f109a9ed5f765a6a92a2
 vendor/lib64/lib-imscmservice.so|09de3458b90b7c445997f894a64ad5f2ba7050fc
 vendor/lib64/lib-imsdpl.so|d590352e0c91cce06675160da5edbcdbbe481bb6
 vendor/lib64/lib-imsqimf.so|6bb4880a1c6361318fafbd28243dc0e75902251e

@@ -78,6 +78,9 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     sound_trigger.primary.sdm660
 
+# Audio (Dolby Atmos)
+$(call inherit-product, vendor/motorola-dolby/setup.mk)
+
 # Audio Configs
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(COMMON_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)

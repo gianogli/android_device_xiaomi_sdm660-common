@@ -81,6 +81,9 @@ PRODUCT_PACKAGES += \
 # Audio (Dolby Atmos)
 $(call inherit-product, vendor/motorola-dolby/setup.mk)
 
+PRODUCT_PACKAGES += \
+    DolbyManager
+
 # Audio Configs
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(COMMON_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)

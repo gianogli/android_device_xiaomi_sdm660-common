@@ -137,6 +137,11 @@ persist.device_config.mglru_native.lru_gen_config=core
 # OEM Unlock reporting
 ro.oem_unlock_supported=1
 
+# OTA
+# Disable A/B OTA dexopting service to prevent battery drain
+# since the OTA Updater app has been removed.
+config.disable_otadexopt=true
+
 # Proximity
 gsm.proximity.enable=true
 

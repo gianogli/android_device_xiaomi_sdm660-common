@@ -69,6 +69,7 @@ PRODUCT_PACKAGES += \
     audio.usbv2.default \
     liba2dpoffload \
     libaudio-resampler \
+    libaudioclient_shim \
     libhdmiedid \
     libhfp \
     libsndmonitor \

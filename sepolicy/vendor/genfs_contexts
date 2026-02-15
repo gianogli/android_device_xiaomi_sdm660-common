@@ -63,6 +63,9 @@ genfscon sysfs /devices/platform/soc/soc:qcom,memlat-cpu4                       
 # Touchpanel
 genfscon sysfs /touchpanel                                                                                                                           u:object_r:sysfs_touchpanel:s0
 
+# USB Device Controller
+genfscon sysfs /class/udc u:object_r:vendor_sysfs_udc:s0
+
 # Wakeup
 genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup                                                                                              u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:goodix_fp/wakeup                                                                                            u:object_r:sysfs_wakeup:s0

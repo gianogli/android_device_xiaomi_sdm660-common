@@ -1,1 +1,1 @@
-allow hal_usb_qti sysfs_udc:dir search;
+allow hal_usb_qti vendor_sysfs_udc:dir search;
